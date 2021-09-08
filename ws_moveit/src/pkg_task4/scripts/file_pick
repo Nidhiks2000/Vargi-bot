@@ -1,0 +1,71 @@
+while not rospy.is_shutdown():
+
+        #packagen02 pick
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen02.yaml', 5)
+        activate_vacuum_gripper(True)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen02_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+        rospy.sleep(1)
+
+        #packagen01 pick
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen01.yaml', 5)
+        activate_vacuum_gripper(True)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen01_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+        rospy.sleep(1)
+
+        #pick packagen00
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen00.yaml', 5)
+        activate_vacuum_gripper(True)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen00_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+        rospy.sleep(1)
+
+       #packagen11 pick 
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen11.yaml', 5)
+        activate_vacuum_gripper(True)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen11_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+        rospy.sleep(1)
+
+        #packagen10 pick
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen10.yaml', 5)
+        activate_vacuum_gripper(True)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen10_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+        rospy.sleep(1)
+
+        #packagen12 pick
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen12.yaml', 50)
+        activate_vacuum_gripper(True)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'push_packagen12.yaml', 5)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen12_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+        rospy.sleep(1)
+
+        #packagen20 pick
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen20.yaml', 5)
+        activate_vacuum_gripper(True)
+        rospy.sleep(0.5)
+        ee_cartesian_translation(0,25,0)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen20_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+        rospy.sleep(2)
+
+        #packagen30 pick
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'zero_to_packagen30.yaml', 5)
+        activate_vacuum_gripper(True)
+        rospy.sleep(0.5)
+        ee_cartesian_translation(0,35,0)
+        ur5.moveit_hard_play_planned_path_from_file(ur5._file_path, 'packagen10_to_zero.yaml', 5)
+        activate_vacuum_gripper(False)
+
+
+        rospy.signal_shutdown("picking done")

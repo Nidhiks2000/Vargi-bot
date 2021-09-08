@@ -1,0 +1,2 @@
+set(pkg_vb_sim_MESSAGE_FILES "/home/nidhi/ws_moveit/src/vb_simulation_pkgs/pkg_vb_sim/msg/Model.msg;/home/nidhi/ws_moveit/src/vb_simulation_pkgs/pkg_vb_sim/msg/LogicalCameraImage.msg;/home/nidhi/ws_moveit/src/vb_simulation_pkgs/pkg_vb_sim/msg/ConveyorBeltState.msg")
+set(pkg_vb_sim_SERVICE_FILES "/home/nidhi/ws_moveit/src/vb_simulation_pkgs/pkg_vb_sim/srv/vacuumGripper.srv;/home/nidhi/ws_moveit/src/vb_simulation_pkgs/pkg_vb_sim/srv/conveyorBeltPowerMsg.srv;/home/nidhi/ws_moveit/src/vb_simulation_pkgs/pkg_vb_sim/srv/ConveyorBeltControl.srv")

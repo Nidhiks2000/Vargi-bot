@@ -1,0 +1,8 @@
+prefix=/home/nidhi/ws_moveit/install
+
+Name: pkg_moveit_ur5_1_config
+Description: Description of pkg_moveit_ur5_1_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

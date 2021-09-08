@@ -1,0 +1,19 @@
+<launch>
+    <!-- Launch Task-4 Simulation Environment in Gazebo -->
+    <include file="$(find pkg_vb_sim)/launch/task4_simulation.launch"/>
+
+    <include file="$(find pkg_vb_sim)/launch/two_ur5_move_group.launch"/>
+
+    <!--Planning scene launch-->
+    <arg name="scene_file" default="$(find pkg_task4)/rviz/ur5_1_planning.scene"/> 
+    <group ns="ur5_1">
+        <node name = "moveit_publish_scene_from_text" pkg= "moveit_ros_planning" type = "moveit_publish_scene_from_text" args= "$(arg scene_file)"/>
+    </group>
+
+   
+
+    <!-- please run this launch file separately-->
+    <!--roslaunch pkg_task4 process_packages.launch-->
+
+
+</launch>

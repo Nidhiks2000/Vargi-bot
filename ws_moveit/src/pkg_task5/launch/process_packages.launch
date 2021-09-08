@@ -1,0 +1,13 @@
+<launch>
+
+    <!--We tried all the strategies but we couldnt update the camera messages so we have written scripts for each package to be sorted-->
+    <node name= "process_packagen00" pkg= "pkg_task5" type="process_packagen00.py" output="screen"/>
+    <node name= "process_packagen01" pkg= "pkg_task5" type="process_packagen01.py" output="screen"/>
+    <node name= "process_packagen02" pkg= "pkg_task5" type="process_packagen02.py" output="screen"/>
+    <node name= "process_packagen10" pkg= "pkg_task5" type="process_packagen10.py" output="screen"/>
+    <node name= "process_packagen11" pkg= "pkg_task5" type="process_packagen11.py" output="screen"/>
+    <node name= "process_packagen12" pkg= "pkg_task5" type="process_packagen12.py" output="screen"/>
+    <node name= "process_packagen30" pkg= "pkg_task5" type="process_packagen30.py" output="screen"/>
+    <node name= "process_packagen22" pkg= "pkg_task5" type="process_packagen20.py" output="screen"/>
+
+</launch>

@@ -1,0 +1,1 @@
+/home/nidhi/ws_moveit/devel/.private/gazebo_msgs/share/roseus/ros/gazebo_msgs/srv/SetPhysicsProperties.l

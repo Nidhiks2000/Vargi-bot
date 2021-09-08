@@ -1,0 +1,39 @@
+<launch>
+    
+    <!-- Spawn Task-2 Models in Gazebo -->
+    <include file="$(find pkg_vb_sim)/launch/task3_simulation.launch"/>
+    
+    
+
+    
+    <!-- Launch Moveit move_group Node -->!
+    <include file = "$(find pkg_moveit_ur5_1)/launch/move_group.launch" /> 
+
+    <!-- Run RViz with Moveit! Plugin -->
+    <arg name="use_rviz" default="true" />
+
+    <include file="$(find pkg_moveit_ur5_1)/launch/moveit_rviz.launch" if="$(arg use_rviz)">
+        <arg name="rviz_config" value="$(find pkg_moveit_ur5_1)/launch/moveit.rviz"/>
+    </include>
+
+    <!-- This node is for .....  -->
+    <!-- It is also .....  -->
+    <node name= "play_ur5_1" pkg= "pkg_task4" type="play.py" output="screen"/>
+    
+    <node name= "red" pkg= "pkg_task4" type="red.py" output="screen"/>
+    <node name= "green" pkg= "pkg_task4" type="green.py" output="screen"/>
+    <node name= "yellow" pkg= "pkg_task4" type="yellow.py" output="screen"/>
+
+
+
+</launch>
+ 
+    
+
+
+   
+
+
+
+
+

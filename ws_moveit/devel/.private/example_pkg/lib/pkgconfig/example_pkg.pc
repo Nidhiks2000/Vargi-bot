@@ -1,0 +1,8 @@
+prefix=/home/nidhi/ws_moveit/devel/.private/example_pkg
+
+Name: example_pkg
+Description: Description of example_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

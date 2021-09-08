@@ -1,0 +1,104 @@
+gs1 = "ROO0121 Medicine HP ROCO 450 1"
+
+
+  goal_handle1 = action_client1.send_goal("http", "push", " ", gs1)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(10)
+
+
+  gs2 = "YO10121 Food MP ROC1 250 1"
+
+  goal_handle2 = action_client1.send_goal("http", "push", " ", gs2)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(10)
+
+
+  gs3 = "G020121 Clothes LP R0C2 150 1"
+
+  goal_handle3 = action_client1.send_goal("http", "push", " ", gs3)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(10)
+
+
+
+  gs4 = "G100121 Clothes LP R1C0 150 1"
+
+  goal_handle4 = action_client1.send_goal("http", "push", " ", gs4)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+
+  gs5 = "Y110121 Food MP R1C1 250 1"
+
+  goal_handle5 = action_client1.send_goal("http", "push", " ", gs5)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+
+  gs6 = "R120121 Medicine HP R1C2 450 1"
+
+  goal_handle6 = action_client1.send_goal("http", "push", " ", gs6)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+
+  gs7 = "G200121 Clothes LP R2C0 150 1"
+
+  goal_handle7 = action_client1.send_goal("http", "push", " ", gs7)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+
+  gs8 = "R210121 Medicine HP R2C1 450 1"
+
+  goal_handle8 = action_client1.send_goal("http", "push", " ", gs8)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+
+  gs9 = "Y220121 Food MP R2C2 250 1"
+
+  goal_handle9 = action_client1.send_goal("http", "push", " ", gs9)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+  gs10 = "Y300121 Food MP R3C1 250 1"
+
+  goal_handle10 = action_client1.send_goal("http", "push", " ", gs10)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+
+  gs11 = "G310121 Clothes LP R3C2 150 1"
+
+  goal_handle11 = action_client1.send_goal("http", "push", " ", gs11)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+
+
+
+  gs12 = "R320121 Medicine HP R3C3 450 1"
+
+  goal_handle12 = action_client1.send_goal("http", "push", " ", gs12)
+  rospy.loginfo("Goal Sent to iot action server")
+
+  rospy.sleep(5)
+

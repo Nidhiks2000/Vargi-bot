@@ -1,0 +1,1 @@
+/home/nidhi/ws_moveit/devel/.private/gazebo_logical_camera/include/gazebo_logical_camera/LogicalCameraImage.h

@@ -1,0 +1,1 @@
+/home/nidhi/ws_moveit/devel/.private/gazebo_conveyor/share/roseus/ros/gazebo_conveyor/manifest.l

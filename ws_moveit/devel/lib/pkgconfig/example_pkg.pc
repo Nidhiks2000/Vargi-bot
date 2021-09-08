@@ -1,0 +1,1 @@
+/home/nidhi/ws_moveit/devel/.private/example_pkg/lib/pkgconfig/example_pkg.pc

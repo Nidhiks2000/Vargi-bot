@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/nidhi/ws_moveit/src/example/example_pkg/CMakeLists.txt:62:
+  Parse error.  Expected a command name, got right paren with text ")".
+
+
+make: *** [cmake_check_build_system] Error 1

@@ -1,0 +1,1 @@
+/home/nidhi/ws_moveit/devel/.private/ur_e_gazebo/lib/pkgconfig/ur_e_gazebo.pc

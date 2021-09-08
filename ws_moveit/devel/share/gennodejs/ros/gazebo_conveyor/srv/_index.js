@@ -1,0 +1,1 @@
+/home/nidhi/ws_moveit/devel/.private/gazebo_conveyor/share/gennodejs/ros/gazebo_conveyor/srv/_index.js

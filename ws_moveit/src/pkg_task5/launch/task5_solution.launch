@@ -1,0 +1,28 @@
+<launch>
+
+    <!-- Launch Task-5 Simulation Environment in Gazebo -->
+    <include file="$(find pkg_vb_sim)/launch/task5_simulation.launch"/>
+    
+    <!--Launching moveit group-->
+    <include file="$(find pkg_vb_sim)/launch/two_ur5_move_group.launch"/>
+
+    <arg name="scene_file" default="$(find pkg_task5)/rviz/ur5_1_planning.scene"/> 
+    <group ns="ur5_1">
+        <node name = "moveit_publish_scene_from_text" pkg= "moveit_ros_planning" type = "moveit_publish_scene_from_text" args= "$(arg scene_file)"/>
+    </group>
+
+    <!--Loading the config file-->
+    <rosparam file ="$(find pkg_ros_iot_bridge)/config/config_pyiot.yaml"/>
+
+    <!--launching the server node-->
+    <node pkg="pkg_ros_iot_bridge" type="node_action_server_ros_iot_bridge.py" name="node_action_server_ros_iot_bridge" output="screen"/>
+
+    <!--detecting the colour of the packages-->
+    <node pkg = "pkg_task5" type="qrcode.py" name="node_eg3_qr_decode" output ="screen"/>
+    <node pkg = "pkg_task5" type= "colour_detection.py" name= "colour_detection" output ="screen"/>
+
+    <!--Please run these two separately-->
+
+    <!--rosrun pkg_task5 play.py-->
+    <!--roslaunch pkg_task5 process_packages.launch-->
+</launch>
